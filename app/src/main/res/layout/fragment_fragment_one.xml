@@ -37,5 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragmentUnoContador"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"/>
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
