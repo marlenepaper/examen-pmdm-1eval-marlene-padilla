@@ -25,4 +25,8 @@
     <string name="sharedpreferencestext">Name stored SharedPreferences</string>
 
     <string name="alertbutton">Open alert</string>
+
+    <string name="alertText">Hola Mario</string>
+    <string name="AprobarText">Aprobar</string>
+    <string name="SuspenderText">Suspender</string>
 </resources>
