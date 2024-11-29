@@ -57,7 +57,7 @@ public class SplashScreen extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
-        }, 1500);
+        }, 4000);//1500
     }
 
 
