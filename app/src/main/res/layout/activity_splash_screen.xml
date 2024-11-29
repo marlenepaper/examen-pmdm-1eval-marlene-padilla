@@ -34,7 +34,7 @@
         android:id="@+id/hoo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hoo"
+        android:text="@string/appSecondName"
         android:fontFamily="@font/mb"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,14 +1,28 @@
 <resources>
     <string name="app_name">ExamenPMDM</string>
     <string name="developer">©marlenepaper</string>
-    <string name="hoo">Hoo</string>
+    <string name="appSecondName">Hoo</string>
 
-    <string name="welcome">Welcome Back</string>
-    <string name="login">Login to your Walkers account</string>
-    <string name="forgot"><u>Forgot password?</u></string>
-    <string name="donthave">Don’t have an account? <u>Sign Up</u></string>
+    <string name="loginHead">Welcome Back</string>
+    <string name="loginDescriptionIntro">Login to your Walkers account</string>
+    <string name="loginForgotPassword"><u>Forgot password?</u></string>
+    <string name="loginRegister">Don’t have an account? <u>Sign Up</u></string>
 
     <string name="loginbutton">Login</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="usernameInput">User Name</string>
+    <string name="passwordInput">Password</string>
+
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+    <string name="randomnumber">Random Number</string>
+    <string name="countertext">Counter</string>
+    <string name="counterbutton">Increase counter</string>
+
+    <string name="sharedpreferencestext">Name stored SharedPreferences</string>
+
+    <string name="alertbutton">Open alert</string>
 </resources>
