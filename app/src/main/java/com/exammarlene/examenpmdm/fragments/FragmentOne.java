@@ -6,33 +6,49 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.exammarlene.examenpmdm.R;
+import com.exammarlene.examenpmdm.databinding.FragmentFragmentOneBinding;
+
+import java.lang.reflect.Array;
 
 public class FragmentOne extends Fragment {
 
+    private FragmentFragmentOneBinding binding;
     private int contador = 0;
-    private Button button0;
+    private String[] nombres = {"macarena", "sierra", "leon"};
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        View rootView = inflater.inflate(R.layout.fragment_fragment_one, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        button0 = rootView.findViewById(R.id.buttonIncrease);
-        button0.setOnClickListener(v -> aumentarContador());
+        binding = FragmentFragmentOneBinding.inflate(inflater, container, false);
+        View rootView = binding.getRoot();
+
+        TextView contadorTextView=rootView.findViewById(R.id.fragmentUnoContador);
+        TextView nombreTextView=rootView.findViewById(R.id.fragmentUnoNombreAleatorio);
+
+        Button button0 = rootView.findViewById(R.id.buttonIncrease);
+        button0.setOnClickListener(v -> {aumentarContador(contadorTextView);nombreAleatorio(nombreTextView);} );
+
         return rootView;
     }
 
-    private void aumentarContador() {
+    private void aumentarContador(TextView contadorTextView) {
         contador++;
-        Log.d("FragmentOne", "Contador: " + contador);
-
+        contadorTextView.setText("Contador: " +contador);
     }
 
+
+    private void nombreAleatorio(TextView nombreTextView) {
+        int indiceAleatorio = (int) (Math.random() * nombres.length);
+        String nombreSeleccionado = nombres[indiceAleatorio];
+
+        nombreTextView.setText(nombreSeleccionado);
+    }
 
 }
